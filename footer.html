@@ -1,0 +1,194 @@
+
+<!-- FOOTER -->
+<div id="footer">
+	
+	<!-- CONTACT US -->
+	<div class="white" style="margin-top:-2px;">
+		
+		<div class="row no-margin">
+			<div id="instafeed"></div>
+		</div>
+		
+		<!-- IG FEED -->
+		<script type="text/javascript">
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+			var orientation = 'landscape'
+			var h = 40;
+
+			if(width >= height){
+				h = 40;
+			}
+			else{
+				if(width <= 500){
+					h = 40;
+				}
+				else{
+					h = 20;
+				}
+				
+			}
+			currentCount = 0;
+			
+			var userFeed = new Instafeed({
+				get: 'user',
+				userId: '5508459097',
+				clientId: '7ff6abbdde2c4729be1b90bb9c2815f2',
+				accessToken: '5508459097.7ff6abb.d1b4a84af5a84155b7126fd8871c25bf',
+				
+				//resonanceznal
+				//userId: '6679769289',
+				//clientId: '9afb597803744903aaca0549e4d48b4c',
+				//accessToken: '6679769289.9afb597.9b41503d36e64c0283da3f23a20b0893',
+				//lazy
+				//userId: '441261446',
+				//clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
+				//accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
+				
+				resolution: 'standard_resolution',
+				template: '<div class="col s12 m3 port-img ig-image" style="background: url({{image}}) 50% 50% no-repeat; height: ' + h + 'vh; background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;"><a href="{{link}}" class="port-img-hover center"><span><p class=""><i class="fa fa-heart" aria-hidden="true"></i> {{likes}} &bull; <i class="fa fa-comment" aria-hidden="true"></i> {{comments}}</p></span></a></div>',
+				limit: 60,
+				links: false,
+				sortBy: 'most-liked',
+				filter: function(image) {
+					console.log(image);
+
+					var shouldDisplay = (currentCount < 4);
+					/*
+					//filter tags
+					var tag1 = 'test';
+					var tag2 = 'anb';
+					var tag3 = 'site';
+					
+					if(shouldDisplay){
+						if(image.tags.indexOf(tag2) >= 0 && image.tags.indexOf(tag3) >= 0){
+							currentCount += 1;
+						}
+						else{
+							shouldDisplay = false;
+						}
+					}
+					*/
+					if (shouldDisplay) {
+						if (image.likes.count >= 30) {
+							currentCount += 1;
+						} else {
+							shouldDisplay = false;
+						}
+					}
+					
+					return shouldDisplay;
+				}
+			});
+			userFeed.run();
+		</script>
+		
+		<!-- BELOW IG FEED -->
+		<div id="contact" class="scrollspy row" style="padding-top: 50px;">
+		
+			<div class="" style="width: 95%; margin: 0 auto;">
+				
+				<!-- CONTACT INFO -->
+				<div class="col s12 m3 l3">
+					<div class="center-when-small"><span class="contact-title">Get In Touch!</span></div>
+					
+					<div class="contact-content contact-border center-when-small grey-text">
+						<span class="grey-text"><i class="fa fa-phone" aria-hidden="true"></i> 778-332-5796</span><br>
+						<span class="grey-text"><a class="grey-text" href="mailto:hello@aboveandbeyondpro.com?Subject=Mail From Site"><i class="fa fa-envelope" aria-hidden="true"></i> hello@aboveandbeyondpro.com</a></span><br>
+						<br>
+						<span class="grey-text"><a  class="grey-text" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></span><br>
+						<span class="grey-text"><a  class="grey-text" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></span><br>
+						<span class="grey-text"><a  class="grey-text" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a></span><br>
+					</div>
+					
+				</div>
+				
+				<!-- EMAIL FORM -->
+				<div class="col s12 m9 l4">
+					<div class="center-when-small"><span class="contact-title">Drop a Message!</span></div>
+					
+					<div class="contact-content " style="padding-bottom: 0; border-radius: 5px;">
+						<form id="gform" method="post" enctype="text/plain" action="https://script.google.com/macros/s/AKfycbwjtnxtMikIWp2W6rAqBll3oof3NnMW95yjvsmjnDfSUokXTtE/exec">
+							<div class="row">
+							
+								<div class="input-field col s6 m4 l4 xl4">
+									<input id="full_name" type="text" class="validate" name="full_name">
+									<label for="full_name">Full Name</label>
+								</div>
+								
+								<div class="input-field col s6 m4 l4 xl4">
+									<input id="phone" type="tel" class="validate" name="phone">
+									<label for="phone">Phone Number</label>
+								</div>
+								
+								<div class="input-field col s12 m4 l4 xl4">
+									<input id="email" type="email" class="validate" name="email">
+									<label for="email">Email</label>
+								</div>
+								
+								<div class="input-field col s12">
+									<textarea id="message" class="materialize-textarea" name="message"></textarea>
+									<label for="message">Message</label>
+								</div>
+								
+								<div class="row center">
+									<div class="col s6">
+										<button class="waves-effect waves-light btn greeny">Send</button>
+									</div>
+									<div class="col s6">
+										<input type="reset" value="Reset" class="waves-effect waves-light btn greeny">
+									</div>
+								</div>
+								
+							</div>
+						</form>
+					
+						<div style="display:none;" id="return-message">
+							<h6 class="grey-text">Your email has been sent. Your message is greatly appreciated. Please wait for further reply. Thank you!</h6>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- GOOGLE MAPS -->
+				<div class="col s12 m12 l5">
+					<div class="center-when-small"><span class="contact-title">Meet with us!</span></div>
+					
+					<div class="contact-content">
+						<div id="googlemap"></div>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<!-- COPYRIGHT -->
+	<footer class="page-footer no-padding">
+		<div class="footer-copyright white">
+			<div class="container grey-text hide-on-small-only">
+				<span class="left copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
+				<span class="right">
+					<a class="grey-text social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a class="grey-text social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a class="grey-text social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+				</span>
+			</div>
+			
+			<div class="container grey-text text-darken-4 center hide-on-med-and-up" style="padding-top: 10px;">
+				<span class="copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
+				<br>
+				<span class="">
+					<a class="grey-text social-foot" href="https://www.facebook.com/AboveAndBeyondBC" target="_new"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a class="grey-text social-foot" href="https://www.instagram.com/aboveandbeyondbc/" target="_new"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a class="grey-text social-foot" href="https://www.youtube.com/channel/UCTLus49_DbVKa6whKewjV4Q/featured" target="_new"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+				</span>
+			</div>
+		</div>
+	</footer>
+
+</div>
+			

@@ -2,82 +2,101 @@
 <html>
 
 	<head>
-		<title>Above And Beyond</title>
-		<link href="img/icon.png" rel="icon">
+		<meta name="keywords" content="Above & Beyond, Wedding, Engagements, Casual Shoot, Creative Shoot, Cinematography, Photography, Pictures, Videos" />
+		<meta name="description" content="Above & Beyond: wedding shoot, engagement shoot, casual shoot, creative shoot, cinematography, and photography. Inquire now and book us now!" />
+		<meta name="copyright" content="Above & Beyond" />
+		<meta name="application-name" content="Above & Beyond" />
+		<meta name="author" content="Clyde Capistrano" />
 		
-		<!--Import Google Icon Font
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
+		<!-- For Facebook -->
+		<meta property="og:type" content="website" />
+		<meta name="fb:app_id" content="1503284323126165" />
 		
-		<!--Import materialize.css-->
-		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+		<!-- For Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:domain" content="http://www.aboveandbeyondpro.com/">
 		
-		<!--Font awesome-->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-				
+		
+		<title>Above & Beyond</title>
+		<link href="http://aboveandbeyondpro.com/img/icon.png" rel="icon">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		
+		<!--Import materialize.css -->
+		<link href="http://aboveandbeyondpro.com/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+		
+		<!--Font awesome-->
+		<link rel="stylesheet" href="http://aboveandbeyondpro.com/css/font-awesome.min.css">
+
 		<!-- photo stack -->
-		<link rel="stylesheet" type="text/css" href="css/photostack.css" />
+		<link rel="stylesheet" type="text/css" href="http://aboveandbeyondpro.com/css/photostack.css" />
 		
 		<!-- hr styles -->
-		<link type="text/css" rel="stylesheet" href="css/hr-styles.css" />
+		<link type="text/css" rel="stylesheet" href="http://aboveandbeyondpro.com/css/hr-styles.css" />
 		
-		<!--Self CSS-->
-		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+		<!--Self CSS -->
+		<link href="http://aboveandbeyondpro.com/css/styles.css" type="text/css" rel="stylesheet" />
 		
+		<!-- INSTA FEED -->
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/instafeed.min.js"></script>
 		
-		<script type="text/javascript" src="js/instafeed.min.js"></script>
+		<!-- CHANGE ME -->
+		<meta property="og:title" content="Above & Beyond" /> <!-- NAV BAR TITLE -->
+		<meta property="og:url" content="http://aboveandbeyondpro.com/" /> <!-- URL OF THE CURRENT PAGE -->
+		<meta property="og:image" content="http://aboveandbeyondpro.com/img/header/landscape/8.jpg" /> <!--http://aboveandbeyondpro.com/img/header/(orientation_here)/(#).jpg -->
+		<meta property="og:description" content="Above & Beyond: wedding shoot, engagement shoot, casual shoot, creative shoot, cinematography, and photography. Inquire now and book us now!" /> <!-- Depends on you if you want to change it -->
 		
 	</head>
 
-	<body>
+	<body ng-app="appBody">
+	
 		<header>
 			
 			<!-- HEADER -->
 			<div id="header-container">
-				<div class="scrollspy" id="ss-home">
+				<div id="home" class="scrollspy">
 					<div class="header center-align">
 						<div class="no-margin">
-							<!--<img src="img/hero2.png" class="responsive-img">-->
+							
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- NAV BAR -->
 			<nav id="navbar-main" class="z-depth-0">
 				
 					<div class="nav-wrapper">
 						
 						<!-- tablet above -->
-						<div class="hide-on-small-only hide-on-below-800px">
-							<a href="#ss-about" id="" class="brand-logo center"><img src="img/nav-logo.png"></a>
+						<div class="hide-on-med-and-down">
+							<a href="#about" id="" class="brand-logo center"><img src="http://aboveandbeyondpro.com/img/nav-logo.png"></a>
 							
 							<div id="nav-links" class="nav-center">
 								<ul id="nav-mobile" class="center hide-on-small-only">
-									<li><a href="#ss-photography" class="navbar-main-links white-text left">PHOTOGRAPHY</a></li>
-									<li><a href="#ss-cinematography" class="navbar-main-links white-text left ">CINEMATOGRAPHY</a></li>
+									<li><a href="#photography" class="navbar-main-links white-text left">PHOTOGRAPHY</a></li>
+									<li><a href="#cinematography" class="navbar-main-links white-text left ">CINEMATOGRAPHY</a></li>
 									
-									<li><a href="#ss-contact" class="navbar-main-links white-text right ">CONTACT US</a></li>
-									<li><a href="#ss-pricing" class="navbar-main-links white-text right ">PRICING</a></li>
-									<li><a href="gallery" class="navbar-main-links white-text right ">GALLERY</a></li>
+									<li><a href="#contact" class="navbar-main-links white-text right ">CONTACT US</a></li>
+									<li><a href="#pricing" class="navbar-main-links white-text right ">PRICING</a></li>
+									<li><a href="gallery/list" class="navbar-main-links white-text right ">GALLERY</a></li>
 								</ul>
 							</div>
 						</div>
 					
 					
 						<!-- small devices -->
-						<div class="hide-on-med-and-up show-on-above-800px">
-							<a href="#ss-home" class="brand-logo left"><img src="img/nav-logo-mini.png"></a>
+						<div class="hide-on-large-only">
+							<a href="#home" class="brand-logo left"><img src="img/nav-logo-mini.png"></a>
 							<!-- Dropdown Works -->
 							<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
-								<li><a href="#ss-about" class="white-text">ABOUT</a></li>
-								<li><a href="#ss-photography" class="white-text">PHOTOGRAPHY</a></li>
-								<li><a href="#ss-cinematography" class="white-text">CINEMATOGRAPHY</a></li>
-								<li><a href="#ss-pricing" class="white-text">PRICING</a></li>
-								<li><a href="#ss-contact" class="white-text">CONTACT US</a></li>
+								<li><a href="#about" class="white-text">ABOUT</a></li>
+								<li><a href="#photography" class="white-text">PHOTOGRAPHY</a></li>
+								<li><a href="#cinematography" class="white-text">CINEMATOGRAPHY</a></li>
+								<li><a href="gallery/list" class="white-text">GALLERY</a></li>
+								<li><a href="#pricing" class="white-text">PRICING</a></li>
+								<li><a href="#contact" class="white-text">CONTACT US</a></li>
 							</ul>
 							
 							<ul id="nav-mobile" class="right">
@@ -94,42 +113,43 @@
 		</header>
 		
 		
-		<main id="ss-main"> 
+		<main id="main" class="white"> 
 		
-			<!-- PICTURES -->
-			<div id="ss-photography" class="section scrollspy white no-padding">
+			<!-- PHOTOGRAPHY -->
+			<div id="photography" class="section scrollspy white no-padding">
 				
 				<div class="white" style="width: 100%;">
 				
 					<div class="row no-margin">
 					
+						<!-- IMAGE 1 -->
 						<div class="col s12 m6 l6 xl6 port-img port-img-1 port-img-hide">
-							<a href="gallery-casuals" class="port-img-hover center">
+							<a href="gallery/weddings/mary-kristian" class="port-img-hover center">
 								<span>
-									<p class="no-margin">Title of Gallery</p>
-									<p class="description no-margin">Casual Shoot &bull; Location,Location</p>
-									<p class="description">January 1, 2017 &bull; 4:20pm</p>
+									<p class="no-margin">Mary & Kristian</p>
+									<p class="description no-margin">Weddings</p>
 								</span>
 							</a>
 						</div>
 						
 						<div class="col s12 m6 l6 xl6 no-padding" style="">
 							<div class="row no-margin">
+								<!-- IMAGE 2 -->
 								<div class="col s12 port-img port-img-2 port-img-hide">
-									<a href="gallery-weddings" class="port-img-hover center">
+									<a href="gallery/weddings/ahmed-fatima" class="port-img-hover center">
 										<span>
-											<p class="no-margin">Title of Gallery</p>
-											<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-											<p class="description">January 1, 2017 &bull; 4:20pm</p>
+											<p class="no-margin">Ahmed & Fatima</p>
+											<p class="description no-margin">Weddings</p>
 										</span>
 									</a>
 								</div>
+								
+								<!-- IMAGE 3 -->
 								<div class="col s12 port-img port-img-3 port-img-hide">
-									<a href="gallery-engagements" class="port-img-hover center">
+									<a href="gallery/weddings/rozele-felix" class="port-img-hover center">
 										<span>
-											<p class="no-margin">Title of Gallery</p>
-											<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-											<p class="description">January 1, 2017 &bull; 4:20pm</p>
+											<p class="no-margin">Rozele & Felix</p>
+											<p class="description no-margin">Weddings</p>
 										</span>
 									</a>
 								</div>
@@ -140,12 +160,12 @@
 					
 					<div class="row no-margin">
 					
+						<!-- IMAGE 4 -->
 						<div class="col s12 port-img port-img-4 port-img-hide">
-							<a href="gallery-engagements" class="port-img-hover center">
+							<a href="gallery/engagements/mary-kristian" class="port-img-hover center">
 								<span>
-									<p class="no-margin">Title of Gallery</p>
-									<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-									<p class="description">January 1, 2017 &bull; 4:20pm</p>
+									<p class="no-margin">Mary & Kristian</p>
+									<p class="description no-margin">Engagements</p>
 								</span>
 							</a>
 						</div>
@@ -153,24 +173,28 @@
 					</div>
 					
 					<div class="row no-margin">
+					
+					
+						<!-- IMAGE 5 -->
 						<div class="col s12 m6 l6 xl6 port-img port-img-5 port-img-hide">
-							<a href="gallery-engagements" class="port-img-hover center">
+							<a href="gallery/engagements/rozele-felix" class="port-img-hover center">
 								<span>
-									<p class="no-margin">Title of Gallery</p>
-									<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-									<p class="description">January 1, 2017 &bull; 4:20pm</p>
+									<p class="no-margin">Rozele & Felix</p>
+									<p class="description no-margin">Engagements</p>
 								</span>
 							</a>
 						</div>
+						
+						<!-- IMAGE 6 -->
 						<div class="col s12 m6 l6 xl6 port-img port-img-6 port-img-hide">
-							<a href="gallery-weddings" class="port-img-hover center">
+							<a href="gallery/debuts/jem-santos" class="port-img-hover center">
 								<span>
-									<p class="no-margin">Wedding Shoot</p>
-									<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-									<p class="description">January 1, 2017 &bull; 4:20pm</p>
+									<p class="no-margin">Jem Santos</p>
+									<p class="description no-margin">Debut</p>
 								</span>
 							</a>
 						</div>
+						
 					</div>
 
 					
@@ -178,33 +202,35 @@
 					
 						<div class="col s12 m6 l6 xl6 no-padding" style="">
 							<div class="row no-margin">
+							
+								<!-- IMAGE 7 -->
 								<div class="col s12 port-img port-img-7 port-img-hide">
-									<a href="gallery-casuals" class="port-img-hover center">
+									<a href="gallery/casuals/jash-angelica" class="port-img-hover center">
 										<span>
-											<p class="no-margin">Title of Gallery</p>
-											<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-											<p class="description">January 1, 2017 &bull; 4:20pm</p>
+											<p class="no-margin">Jash & Angelica</p>
+											<p class="description no-margin">Casual Shoot</p>
 										</span>
 									</a>
 								</div>
+								
+								<!-- IMAGE 8 -->
 								<div class="col s12 port-img port-img-8 port-img-hide">
-									<a href="gallery-casuals" class="port-img-hover center">
+									<a href="gallery/casuals/lights" class="port-img-hover center">
 										<span>
-											<p class="no-margin">Title of Gallery</p>
-											<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-											<p class="description">January 1, 2017 &bull; 4:20pm</p>
+											<p class="no-margin">Lights</p>
+											<p class="description no-margin">Casual Shoot</p>
 										</span>
 									</a>
 								</div>
 							</div>
 						</div>
 					
+						<!-- IMAGE 9 -->
 						<div class="col s12 m6 l6 xl6 port-img port-img-9 port-img-hide">
-							<a href="gallery-engagements" class="port-img-hover center">
+							<a href="gallery/engagements/ahmed-fatima" class="port-img-hover center">
 								<span>
-									<p class="no-margin">Title of Gallery</p>
-									<p class="description no-margin">Type of Gallery &bull; Location,Location</p>
-									<p class="description">January 1, 2017 &bull; 4:20pm</p>
+									<p class="no-margin">Ahmed & Fatima</p>
+									<p class="description no-margin">Engagements</p>
 								</span>
 							</a>
 						</div>
@@ -214,24 +240,43 @@
 				</div>
 				
 			</div>
-			
-			<!-- VIDEOS -->
-			<div id="ss-cinematography" class="section scrollspy white" style="margin-top:-2px;">
+		
+			<!-- CINEMATOGRAPHY -->
+			<div id="cinematography" class="section scrollspy white" style="margin-top:-2px;">
 			
 				<h4 class="center">CINEMATOGRAPHY</h4>
-				<p class="container center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo.</p>
 				
-				<div class="container" style="padding: 40px 0 0px 0;">
-					<div class="video-container">
-						<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/OetfYI52Q68" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>
+				<!-- VIDEOS LIST -->
+				<div class="">
+				
+					<div class="container" style="padding: 40px 0 0px 0;">
+						<div class="video-container">
+							<iframe width="853" height="480" src="https://www.youtube.com/embed/884mqMWtkpw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
+						</div>
 					</div>
+					
+					<div class="container" style="padding: 40px 0 0px 0;">
+						<div class="video-container">
+							<iframe width="853" height="480" src="https://www.youtube.com/embed/qx8TUQr6EO8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
+						</div>
+					</div>
+					
+					<div class="container" style="padding: 40px 0 0px 0;">
+						<div class="video-container">
+							<iframe width="853" height="480" src="https://www.youtube.com/embed/OetfYI52Q68" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
+						</div>
+					</div>
+					
 				</div>
+				
 				
 			</div>
 			
 			<!-- PRICING -->
-			<div id="ss-pricing" class="white section scrollspy">
+			<div id="pricing" class="white section scrollspy">
 				<div class="container">
 					<h4 class="center">PRICING</h4>
 					
@@ -245,43 +290,40 @@
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 1: <span class="right">$1000</span></b></li>
+												<li><b>Package 1: <span class="right">$900</span></b></li>
 												<li><hr></li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 2: <span class="right">$1000</span></b></li>
+												<li><b>Package 2: <span class="right">$1100</span></b></li>
 												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Hours Coverage</li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 3: <span class="right">$1000</span></b></li>
+												<li><b>Package 3: <span class="right">$1400</span></b></li>
 												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 10 Hours Coverage</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 2 Professional Photographers</li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 								</div>
@@ -299,219 +341,59 @@
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 1: <span class="right">$1000</span></b></li>
+												<li><b>Package 1: <span class="right">$1200</span></b></li>
 												<li><hr></li>
 												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Videographer</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 2: <span class="right">$1000</span></b></li>
+												<li><b>Package 2: <span class="right">$1500</span></b></li>
 												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Hours of Coverage</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Videographer</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 									<div class="col s12 m4 l4 xl4">
 										<div class="container pricing">
 											<ul>
-												<li><b>Package 3: <span class="right">$1000</span></b></li>
+												<li><b>Package 3: <span class="right">$1800</span></b></li>
 												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 10 Hours of Coverage</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 2 Professional Videographers</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
+												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
 												<li><hr></li>
 											</ul>
-											<a href="#ss-contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
+											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</li>
 					</ul>
-										
-					<div class="row hide">
 					
-						<div class="col s12">
-							</div>
-						
-						<div class="col s12 m6 l6 xl6">
-							<ul class="collapsible" data-collapsible="accordion">
-								<li>
-									<div id="price-photography" class="collapsible-header center">
-										<h5>Photography</h5>
-									</div>
-									<div class="collapsible-body">
-										<div class="container center">
-											<img src="img/pricing/photography.jpg" class="circle responsive-img container">
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 1
-										<span class="new badge red" data-badge-caption="Any Text + Color"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										<br>
-										
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 2
-										<span class="new badge teal accent-4" data-badge-caption="Best Seller"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 3
-										<span class="new badge teal accent-4" data-badge-caption="Premium"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										<br>
-										
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-						<div class="col s12 m6 l6 xl6">
-							<ul class="collapsible" data-collapsible="accordion">
-								<li>
-									<div id="price-cinematography" class="collapsible-header center">
-										<h5>Cinematography</h5>
-									</div>
-									<div class="collapsible-body">
-										<div class="container center">
-											<img src="img/pricing/cinematography.jpg" class="circle responsive-img container">
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 1
-										<span class="new badge red" data-badge-caption="Any Text + Color"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										<br>
-										
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 2
-										<span class="new badge teal accent-4" data-badge-caption="Best Seller"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										<br>
-										
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header">
-										<i class="fa fa-angle-down" aria-hidden="true"></i>
-										Package 3
-										<span class="new badge teal accent-4" data-badge-caption="Premium"></span>
-									</div>
-									<div class="collapsible-body">
-									
-										<ul>
-											<li><hr></li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-											<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Sneak Peek Photos (within 1 week)</li>
-											<li><hr></li>
-											<li class="right">Total: <b>$1000</b></li>
-										</ul>
-										<br>
-										
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-					</div>
-					
-					<p class="center-align">We want to deliver the best work possible bla bla bla convince.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est.</p>
-					
+					<div class="center"><h5 class="grey-text text-darken-3">*free engagement shoot if you book both photo+video services</h5></div>
 				</div>
 			</div>
 				
 			<!-- DESCRIPTION -->
-			<div id="ss-about" class="section scrollspy white" style="padding-top: 50px;">
+			<div id="about" class="section scrollspy white" style="padding-top: 50px;">
 			
 				<hr class="style3" style="width:50%;">
 		
@@ -521,10 +403,10 @@
 						<div class="">
 							<br>
 							<figure class="stack stack-sidegrid" id="stack-intro">
-								<img src="img/about/4.jpg"/>
-								<img src="img/about/2.jpg"/>
-								<img src="img/about/3.jpg"/>
-								<img src="img/about/1.jpg"/>
+								<img src="http://aboveandbeyondpro.com/img/about/4.jpg"/>
+								<img src="http://aboveandbeyondpro.com/img/about/2.jpg"/>
+								<img src="http://aboveandbeyondpro.com/img/about/3.jpg"/>
+								<img src="http://aboveandbeyondpro.com/img/about/1.jpg"/>
 							</figure>
 							
 						</div>
@@ -533,15 +415,16 @@
 					<div class="col s12 m7 l7 center-when-small right-align">
 						<div class="container">
 						
-							<h3>Above and Beyond</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus et metus sollicitudin, egestas ipsum eget, aliquet lectus. Praesent et velit ac ligula aliquet egestas ut eu est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus hendrerit varius. Suspendisse consequat dictum dui, nec elementum metus commodo a.</p>
+							<h3>Quality Photography and Cinematography at affordable prices</h3>
+							<p>Seeing things differently is the cornerstone of the ABOVE AND BEYOND's vision, We are constantly trying to do everything a little better, a little simpler, more efficiently and always cost-effectively. We provide outstanding products and unsurpassed service that together make a positive difference in our clients lives.</p>
 							
 						</div>
 					</div>
 					
 				</div>
 				
-				<div class="container" style="padding-top: 20px;">
+				<!-- TEAM -->
+				<div class="container hide" style="padding-top: 20px;">
 					<div class="row">
 					
 						<div class="col s12 m4">
@@ -589,194 +472,29 @@
 			</div>
 
 			<!-- FOOTER -->
-			<div id="footer">
+			<div ng-include src="'footer.html'"></div>
 			
-				<!-- CONTACT US -->
-				<div id="ss-contact" class="scrollspy white" style="margin-top:-2px;">
-					
-					<div class="row no-margin">
-						<div id="instafeed"></div>
-					</div>
-					
-					<script type="text/javascript">
-						currentCount = 0;
-						var userFeed = new Instafeed({
-							get: 'user',
-							userId: '6679769289',
-							clientId: '9afb597803744903aaca0549e4d48b4c',
-							accessToken: '6679769289.9afb597.9b41503d36e64c0283da3f23a20b0893',
-							//userId: '441261446',
-							//clientId: ' 2ef18e5db3644483ad67c22cd212d13e',
-							//accessToken: '441261446.2ef18e5.6088c146db284029b022af658bc25e89',
-							resolution: 'standard_resolution',
-							template: '<div class="col s12 m3 port-img ig-image" style="background: url({{image}}) 50% 50% no-repeat; height: 40vh; background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;"><a href="{{link}}" class="port-img-hover center"><span><p class=""><i class="fa fa-heart" aria-hidden="true"></i> {{likes}} &bull; <i class="fa fa-comment" aria-hidden="true"></i> {{comments}}</p></span></a></div>',
-							limit: 60,
-							links: false,
-							sortBy: 'most-recent',
-							filter: function(image) {
-								console.log(image.tags);
-
-								var shouldDisplay = (currentCount < 4);
-								
-								//filter tags
-								var tag1 = 'test';
-								var tag2 = 'anb';
-								var tag3 = 'site';
-
-								if(shouldDisplay){
-									if(image.tags.indexOf(tag2) >= 0 && image.tags.indexOf(tag3) >= 0){
-										currentCount += 1;
-									}
-									else{
-										shouldDisplay = false;
-									}
-								}
-								/*if (shouldDisplay) {
-									if (image.likes.count >= 0) {
-										currentCount += 1;
-									} else {
-										shouldDisplay = false;
-									}
-								}*/
-
-								return shouldDisplay;
-							}
-						});
-						userFeed.run();
-					</script>
-					
-					<div class="row" style="padding-top: 50px;">
-					
-						<div class="" style="width: 95%; margin: 0 auto;">
-							
-							<div class="col s12 m3 l2">
-								<div class="center-when-small"><span class="contact-title">Get In Touch!</span></div>
-								
-								<div class="contact-content contact-border center-when-small grey-text">
-									<span><i class="fa fa-map-marker" aria-hidden="true"></i> 72 Red Lion Street,<br>London, Philippines</span><br>
-									<br>
-									<span><i class="fa fa-user" aria-hidden="true"></i> 12312312</span><br>
-									<span><i class="fa fa-phone" aria-hidden="true"></i> 12312312</span><br>
-									<span><i class="fa fa-envelope" aria-hidden="true"></i> asdada@asdasda.com</span><br>
-									<br>
-									<span><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</span><br>
-									<span><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</span><br>
-									<span><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</span><br>
-									<span><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</span><br>
-								</div>
-								
-							</div>
-							
-							<div class="col s12 m9 l5">
-								<div class="center-when-small"><span class="contact-title">Drop a Message!</span></div>
-								
-								<div class="contact-content grey lighten-5" style="padding-bottom: 0; border-radius: 5px;">
-									<form action="mailto:no-one@snailmail.com?subject=Mail From Website" method="post" enctype="text/plain">
-										<div class="row">
-										
-											<div class="input-field col s6 m4 l4 xl4">
-												<input id="full_name" type="text" class="validate" name="full_name">
-												<label for="full_name">Full Name</label>
-											</div>
-											
-											<div class="input-field col s6 m4 l4 xl4">
-												<input id="phone" type="tel" class="validate" name="phone">
-												<label for="phone">Phone Number</label>
-											</div>
-											
-											<div class="input-field col s12 m4 l4 xl4">
-												<input id="email" type="email" class="validate" name="email">
-												<label for="email">Email</label>
-											</div>
-											
-											<div class="input-field col s12">
-												<textarea id="message" class="materialize-textarea" name="message"></textarea>
-												<label for="message">Message</label>
-											</div>
-											
-											<div class="row center">
-												<div class="col s6">
-													<input type="submit" value="Send" class="waves-effect waves-light btn greeny">
-												</div>
-												<div class="col s6">
-													<input type="reset" value="Reset" class="waves-effect waves-light btn greeny">
-												</div>
-											</div>
-											
-										</div>
-									</form>
-								
-								</div>
-							</div>
-							
-							<div class="col s12 m12 l5">
-								<div class="center-when-small"><span class="contact-title">Meet with us!</span></div>
-								
-								<div class="contact-content">
-									<div id="googlemap"></div>
-									<script>
-										function initMap() {
-											var uluru = {lat: 14.070720, lng: 121.302313};
-											var map = new google.maps.Map(document.getElementById('googlemap'), {
-												zoom: 20,
-												center: uluru,
-												mapTypeId: 'roadmap',
-												mapTypeControl: true,
-												mapTypeControlOptions: {
-													style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-													mapTypeIds: ['roadmap', 'terrain', 'satellite']
-												}
-											});
-											var marker = new google.maps.Marker({
-												position: uluru,
-												map: map
-											});
-										}
-									</script>
-									<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YbJJhTqKVjkqHzSSYT2TuDiZyJ3-_Yk&callback=initMap"></script>
-								</div>
-								
-							</div>
-						
-						</div>
-						
-					</div>
-					
-				</div>
-				
-				<!-- COPYRIGHT -->
-				<footer class="page-footer no-padding">
-					<div class="footer-copyright white">
-						<div class="container grey-text hide-on-small-only">
-							<span class="left copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
-							<span class="right">
-								<a class="social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-								<a class="social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a class="social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-								<a class="social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-							</span>
-						</div>
-						
-						<div class="container grey-text text-darken-4 center hide-on-med-and-up" style="padding-top: 10px;">
-							<span class=" copyright-text"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Above and Beyond</span>
-							<br>
-							<span class="">
-								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-								<a class="grey-text text-darken-4 social-foot" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-							</span>
-						</div>
-					</div>
-				</footer>
-			
-			</div>
 		</main>
 		
 		<!--SCRIPTS-->
-		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>
-		<script type="text/javascript" src="js/photostack.js"></script> 
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/materialize.js"></script>
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/photostack.js"></script> 
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/functions.js"></script>
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/holder.js"></script>
+		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/email.js"></script>
+		<script src="http://www.aboveandbeyondpro.com/js/gmap.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YbJJhTqKVjkqHzSSYT2TuDiZyJ3-_Yk&callback=initMap&language=en"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+		<script>
+            var app = angular.module('appBody', []);
+        </script>
+		<!--<script>
+			$('body').css('background', 'url(http://aboveandbeyondpro.com/img/header/portrait/3.jpg) center center no-repeat');
+			$('body').css('-webkit-background-size', 'cover');
+			$('body').css('-moz-background-size', 'cover');
+			$('body').css('-o-background-size', 'cover');
+			$('body').css('background-size', 'cover');
+		</script>-->
 	</body>
 </html>
