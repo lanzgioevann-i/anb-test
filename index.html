@@ -1,500 +1,58 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <meta name="viewport" target-densitydpi="device-dpi" content="width=device-width, initial-scale=1.0" />
+        <title>Roma Industries</title>
+		<link href="img/logo.jpg" rel="icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slidein.css">
 
-	<head>
-		<meta name="keywords" content="Above & Beyond, Wedding, Engagements, Casual Shoot, Creative Shoot, Cinematography, Photography, Pictures, Videos" />
-		<meta name="description" content="Above & Beyond: wedding shoot, engagement shoot, casual shoot, creative shoot, cinematography, and photography. Inquire now and book us now!" />
-		<meta name="copyright" content="Above & Beyond" />
-		<meta name="application-name" content="Above & Beyond" />
-		<meta name="author" content="Clyde Capistrano" />
-		
-		<!-- For Facebook -->
-		<meta property="og:type" content="website" />
-		<meta name="fb:app_id" content="1503284323126165" />
-		
-		<!-- For Twitter -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:domain" content="http://www.aboveandbeyondpro.com/">
-		
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		
-		<title>Above & Beyond</title>
-		<link href="http://aboveandbeyondpro.com/img/icon.png" rel="icon">
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-		
-		<!--Import materialize.css -->
-		<link href="http://aboveandbeyondpro.com/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-		
-		<!--Font awesome-->
-		<link rel="stylesheet" href="http://aboveandbeyondpro.com/css/font-awesome.min.css">
-
-		<!-- photo stack -->
-		<link rel="stylesheet" type="text/css" href="http://aboveandbeyondpro.com/css/photostack.css" />
-		
-		<!-- hr styles -->
-		<link type="text/css" rel="stylesheet" href="http://aboveandbeyondpro.com/css/hr-styles.css" />
-		
-		<!--Self CSS -->
-		<link href="http://aboveandbeyondpro.com/css/styles.css" type="text/css" rel="stylesheet" />
-		
-		<!-- INSTA FEED -->
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/instafeed.min.js"></script>
-		
-		<!-- CHANGE ME -->
-		<meta property="og:title" content="Above & Beyond" /> <!-- NAV BAR TITLE -->
-		<meta property="og:url" content="http://aboveandbeyondpro.com/" /> <!-- URL OF THE CURRENT PAGE -->
-		<meta property="og:image" content="http://aboveandbeyondpro.com/img/header/landscape/8.jpg" /> <!--http://aboveandbeyondpro.com/img/header/(orientation_here)/(#).jpg -->
-		<meta property="og:description" content="Above & Beyond: wedding shoot, engagement shoot, casual shoot, creative shoot, cinematography, and photography. Inquire now and book us now!" /> <!-- Depends on you if you want to change it -->
-		
-	</head>
-
-	<body ng-app="appBody">
+        
+       
+    </head>
+    <body>
 	
-		<header>
-			
-			<!-- HEADER -->
-			<div id="header-container">
-				<div id="home" class="scrollspy">
-					<div class="header center-align">
-						<div class="no-margin">
-							
-						</div>
-					</div>
-				</div>
-			</div>
+        <!-- HEADER -->
+        <div class="hero">
 
-			<!-- NAV BAR -->
-			<nav id="navbar-main" class="z-depth-0">
-				
-					<div class="nav-wrapper">
-						
-						<!-- tablet above -->
-						<div class="hide-on-med-and-down">
-							<a href="#about" id="" class="brand-logo center"><img src="http://aboveandbeyondpro.com/img/nav-logo.png"></a>
-							
-							<div id="nav-links" class="nav-center">
-								<ul id="nav-mobile" class="center hide-on-small-only">
-									<li><a href="#photography" class="navbar-main-links white-text left">PHOTOGRAPHY</a></li>
-									<li><a href="#cinematography" class="navbar-main-links white-text left ">CINEMATOGRAPHY</a></li>
-									
-									<li><a href="#contact" class="navbar-main-links white-text right ">CONTACT US</a></li>
-									<li><a href="#pricing" class="navbar-main-links white-text right ">PRICING</a></li>
-									<li><a href="gallery/list" class="navbar-main-links white-text right ">GALLERY</a></li>
-								</ul>
-							</div>
-						</div>
-					
-					
-						<!-- small devices -->
-						<div class="hide-on-large-only">
-							<a href="#home" class="brand-logo left"><img src="img/nav-logo-mini.png"></a>
-							<!-- Dropdown Works -->
-							<ul id="ddSmallDevice" class="dropdown-content nav-dropdown-mobile">
-								<li><a href="#about" class="white-text">ABOUT</a></li>
-								<li><a href="#photography" class="white-text">PHOTOGRAPHY</a></li>
-								<li><a href="#cinematography" class="white-text">CINEMATOGRAPHY</a></li>
-								<li><a href="gallery/list" class="white-text">GALLERY</a></li>
-								<li><a href="#pricing" class="white-text">PRICING</a></li>
-								<li><a href="#contact" class="white-text">CONTACT US</a></li>
-							</ul>
-							
-							<ul id="nav-mobile" class="right">
-								<li>
-									<a href="#" data-activates="ddSmallDevice" data-beloworigin="true" class="navbar-main-links white-text dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-						
-					</div>
-				
-				</nav>
-			
-		</header>
-		
-		
-		<main id="main" class="white"> 
-		
-			<!-- PHOTOGRAPHY -->
-			<div id="photography" class="section scrollspy white no-padding">
-				
-				<div class="white" style="width: 100%;">
-				
-					<div class="row no-margin">
-					
-						<!-- IMAGE 1 -->
-						<div class="col s12 m6 l6 xl6 port-img port-img-1 port-img-hide">
-							<a href="gallery/weddings/mary-kristian" class="port-img-hover center">
-								<span>
-									<p class="no-margin">Mary & Kristian</p>
-									<p class="description no-margin">Weddings</p>
-								</span>
-							</a>
-						</div>
-						
-						<div class="col s12 m6 l6 xl6 no-padding" style="">
-							<div class="row no-margin">
-								<!-- IMAGE 2 -->
-								<div class="col s12 port-img port-img-2 port-img-hide">
-									<a href="gallery/weddings/ahmed-fatima" class="port-img-hover center">
-										<span>
-											<p class="no-margin">Ahmed & Fatima</p>
-											<p class="description no-margin">Weddings</p>
-										</span>
-									</a>
-								</div>
-								
-								<!-- IMAGE 3 -->
-								<div class="col s12 port-img port-img-3 port-img-hide">
-									<a href="gallery/weddings/rozele-felix" class="port-img-hover center">
-										<span>
-											<p class="no-margin">Rozele & Felix</p>
-											<p class="description no-margin">Weddings</p>
-										</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					
-					<div class="row no-margin">
-					
-						<!-- IMAGE 4 -->
-						<div class="col s12 port-img port-img-4 port-img-hide">
-							<a href="gallery/engagements/mary-kristian" class="port-img-hover center">
-								<span>
-									<p class="no-margin">Mary & Kristian</p>
-									<p class="description no-margin">Engagements</p>
-								</span>
-							</a>
-						</div>
-						
-					</div>
-					
-					<div class="row no-margin">
-					
-					
-						<!-- IMAGE 5 -->
-						<div class="col s12 m6 l6 xl6 port-img port-img-5 port-img-hide">
-							<a href="gallery/engagements/rozele-felix" class="port-img-hover center">
-								<span>
-									<p class="no-margin">Rozele & Felix</p>
-									<p class="description no-margin">Engagements</p>
-								</span>
-							</a>
-						</div>
-						
-						<!-- IMAGE 6 -->
-						<div class="col s12 m6 l6 xl6 port-img port-img-6 port-img-hide">
-							<a href="gallery/debuts/jem-santos" class="port-img-hover center">
-								<span>
-									<p class="no-margin">Jem Santos</p>
-									<p class="description no-margin">Debut</p>
-								</span>
-							</a>
-						</div>
-						
-					</div>
+            <div class="container-fluid d-none">
+                <div class="row fill-parent align-items-center text-center p-5">
+                    <div class="col p-5" style="border-top: solid 1px white; border-bottom: solid 1px white;">
+                        <!--<h1 class="white-text font-bebas d-sm-block d-md-none">ROMA INDUSTRIES</h1>
+                        <h1 class="white-text font-bebas display-3 d-none d-md-block">ROMA INDUSTRIES</h1>-->
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </div>
 
-					
-					<div class="row no-margin">
-					
-						<div class="col s12 m6 l6 xl6 no-padding" style="">
-							<div class="row no-margin">
-							
-								<!-- IMAGE 7 -->
-								<div class="col s12 port-img port-img-7 port-img-hide">
-									<a href="gallery/casuals/jash-angelica" class="port-img-hover center">
-										<span>
-											<p class="no-margin">Jash & Angelica</p>
-											<p class="description no-margin">Casual Shoot</p>
-										</span>
-									</a>
-								</div>
-								
-								<!-- IMAGE 8 -->
-								<div class="col s12 port-img port-img-8 port-img-hide">
-									<a href="gallery/casuals/lights" class="port-img-hover center">
-										<span>
-											<p class="no-margin">Lights</p>
-											<p class="description no-margin">Casual Shoot</p>
-										</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					
-						<!-- IMAGE 9 -->
-						<div class="col s12 m6 l6 xl6 port-img port-img-9 port-img-hide">
-							<a href="gallery/engagements/ahmed-fatima" class="port-img-hover center">
-								<span>
-									<p class="no-margin">Ahmed & Fatima</p>
-									<p class="description no-margin">Engagements</p>
-								</span>
-							</a>
-						</div>
-						
-					</div>
-					
-				</div>
-				
-			</div>
-		
-			<!-- CINEMATOGRAPHY -->
-			<div id="cinematography" class="section scrollspy white" style="margin-top:-2px;">
-			
-				<h4 class="center">CINEMATOGRAPHY</h4>
-				
-				<!-- VIDEOS LIST -->
-				<div class="">
-				
-					<div class="container" style="padding: 40px 0 0px 0;">
-						<div class="video-container">
-							<iframe width="853" height="480" src="https://www.youtube.com/embed/884mqMWtkpw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
-						</div>
-					</div>
-					
-					<div class="container" style="padding: 40px 0 0px 0;">
-						<div class="video-container">
-							<iframe width="853" height="480" src="https://www.youtube.com/embed/qx8TUQr6EO8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
-						</div>
-					</div>
-					
-					<div class="container" style="padding: 40px 0 0px 0;">
-						<div class="video-container">
-							<iframe width="853" height="480" src="https://www.youtube.com/embed/OetfYI52Q68" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-							<!--<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLK28MtyW6vJ3_Eyx6nxHLTZEDNftbWKAD" frameborder="0" gesture="media" controls allowfullscreen></iframe>-->
-						</div>
-					</div>
-					
-				</div>
-				
-				
-			</div>
-			
-			<!-- PRICING -->
-			<div id="pricing" class="white section scrollspy">
-				<div class="container">
-					<h4 class="center">PRICING</h4>
-					
-					<ul class="collapsible" data-collapsible="accordion">
-						<li>
-							<div id="price-photography" class="collapsible-header center active">
-								<h5>Photography</h5>
-							</div>
-							<div class="collapsible-body">
-								<div class="row">
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 1: <span class="right">$900</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 2: <span class="right">$1100</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Hours Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Photographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 3: <span class="right">$1400</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 10 Hours Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 2 Professional Photographers</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> HD Edited & Retouched photos via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-					
-					<ul class="collapsible" data-collapsible="accordion">
-						<li>
-							<div id="price-photography" class="collapsible-header center active">
-								<h5>Cinematography</h5>
-							</div>
-							<div class="collapsible-body">
-								<div class="row">
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 1: <span class="right">$1200</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 6 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Videographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 2: <span class="right">$1500</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 Professional Videographer</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-									<div class="col s12 m4 l4 xl4">
-										<div class="container pricing">
-											<ul>
-												<li><b>Package 3: <span class="right">$1800</span></b></li>
-												<li><hr></li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 10 Hours of Coverage</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> 2 Professional Videographers</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited 3 minute trailer gallery</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Professionally edited full wedding film</li>
-												<li><i class="fa fa-check-square-o" aria-hidden="true"></i> Provided via private online gallery</li>
-												<li><hr></li>
-											</ul>
-											<a href="#contact" class="waves-effect waves-light btn greeny center white-text" style="width: 100%;">BOOK US NOW</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-					
-					<div class="center"><h5 class="grey-text text-darken-3">*free engagement shoot if you book both photo+video services</h5></div>
-				</div>
-			</div>
-				
-			<!-- DESCRIPTION -->
-			<div id="about" class="section scrollspy white" style="padding-top: 50px;">
-			
-				<hr class="style3" style="width:50%;">
-		
-				<div class="row">
-					<br>
-					<div class="col s12 m5 l5">
-						<div class="">
-							<br>
-							<figure class="stack stack-sidegrid" id="stack-intro">
-								<img src="http://aboveandbeyondpro.com/img/about/4.jpg"/>
-								<img src="http://aboveandbeyondpro.com/img/about/2.jpg"/>
-								<img src="http://aboveandbeyondpro.com/img/about/3.jpg"/>
-								<img src="http://aboveandbeyondpro.com/img/about/1.jpg"/>
-							</figure>
-							
-						</div>
-					</div>
-					
-					<div class="col s12 m7 l7 center-when-small right-align">
-						<div class="container">
-						
-							<h3>Quality Photography and Cinematography at affordable prices</h3>
-							<p>Seeing things differently is the cornerstone of the ABOVE AND BEYOND's vision, We are constantly trying to do everything a little better, a little simpler, more efficiently and always cost-effectively. We provide outstanding products and unsurpassed service that together make a positive difference in our clients lives.</p>
-							
-						</div>
-					</div>
-					
-				</div>
-				
-				<!-- TEAM -->
-				<div class="container hide" style="padding-top: 20px;">
-					<div class="row">
-					
-						<div class="col s12 m4">
-							<div class="team white z-depth-2">
-								<div class="team-header center">
-									<img src="img/john-doe.jpg" class="team-image circle responsive-img z-depth-1">
-									<h4 class="center">Clyde Capistrano</h4>
-								</div>
-								<div class="team-content center">
-									<span>Creative Head Director + Founder</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est.</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col s12 m4">
-							<div class="team white z-depth-2">
-								<div class="team-header center">
-									<img src="img/john-doe.jpg" class="team-image circle responsive-img z-depth-1">
-									<h4 class="center">Jane Doe</h4>
-								</div>
-								<div class="team-content center">
-									<span>Assistant Director</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est.</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col s12 m4">
-							<div class="team white z-depth-2">
-								<div class="team-header center">
-									<img src="img/john-doe.jpg" class="team-image circle responsive-img z-depth-1">
-									<h4 class="center">John Doe</h4>
-								</div>
-								<div class="team-content center">
-									<span>Photographer</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at arcu eu ante aliquet pretium malesuada sed ligula. Maecenas eget tempus mauris. Morbi efficitur ante non neque posuere pulvinar in a est.</p>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-				</div>
-				
-			</div>
+        <div id="navline"></div>
 
-			<!-- FOOTER -->
-			<div ng-include src="'footer.html'"></div>
-			
-		</main>
-		
-		<!--SCRIPTS-->
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/materialize.js"></script>
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/photostack.js"></script> 
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/functions.js"></script>
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/holder.js"></script>
-		<script type="text/javascript" src="http://aboveandbeyondpro.com/js/email.js"></script>
-		<script src="http://www.aboveandbeyondpro.com/js/gmap.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YbJJhTqKVjkqHzSSYT2TuDiZyJ3-_Yk&callback=initMap&language=en"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
-		<script>
-            var app = angular.module('appBody', []);
-        </script>
-		<!--<script>
-			$('body').css('background', 'url(http://aboveandbeyondpro.com/img/header/portrait/3.jpg) center center no-repeat');
-			$('body').css('-webkit-background-size', 'cover');
-			$('body').css('-moz-background-size', 'cover');
-			$('body').css('-o-background-size', 'cover');
-			$('body').css('background-size', 'cover');
-		</script>-->
-	</body>
-</html>
+        <!-- HEADER -->
+        <div id="header-container">
+            <div id="home" class="scrollspy">
+                <div class="header center-align">
+                    <div class="no-margin">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="min-height: 300vh;" class="red"></div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/functions.js"></script>
+
+    </body>
+</HTML>
